@@ -1,0 +1,72 @@
+GENDER,RACE,LOCATION,STATE,DATE,YEAR,FATALITIES,WOUNDED,TOTALVICTIMS,TYPEOFWEAPONS,ASSAULT,LATITUDE,LONGITUDE
+Male,Middle Eastern,"Chattanooga, Tennessee",Tennessee,7/16/2015,2015,5,2,7,2 assault rifles; semiautomatic handgun,Yes,35.04715729,-85.31182098
+Male,White,"Charleston, South Carolina",South Carolina,6/17/2015,2015,9,1,10,Handgun,No,32.7883873,-79.93314362
+Male,Native American,"Marysville, Washington",Washington,10/24/2014,2014,5,1,6,Handgun,No,48.05082321,-122.176918
+Female,Native American,"Alturas, California",California,2/20/2014,2014,4,2,6,Two handguns and a butcher knife,No,41.48710251,-120.5422363
+Male,Black,"Washington, D.C.",D.C.,9/16/2013,2013,12,8,20,"Sawed-off shotgun, 2 boxes of shells; also a .45-caliber handgun taken from a security guard he shot at the scene.",No,38.87498093,-76.99452972
+Male,Latino,"Hialeah, Florida",Florida,7/26/2013,2013,7,0,7,9mm semi-automatic handgun,No,25.86701012,-80.29146576
+Male,White,"Santa Monica, California",California,6/7/2013,2013,6,3,9,"Assault rifle, high capacity magazines, antique handgun",Yes,34.0086174,-118.494751
+Male,Black,"Federal Way, Washington",Washington,4/21/2013,2013,5,0,5,"Semiautomatic handgun, shotgun",No,47.31296158,-122.3393631
+Male,White,"Herkimer County, New York",New York,3/13/2013,2013,5,2,7,Shotgun,No,43.04560089,-74.9848938
+Male,White,"Newtown, Connecticut",Connecticut,12/14/2012,2012,28,2,30,"Two semiautomatic handguns, one rifle (assault), one shotgun (assault)",Yes,41.412323,-73.31142426
+Male,White,"Minneapolis, Minnesota",Minnesota,9/27/2012,2012,7,1,8,One semiautomatic handgun,No,44.97729874,-93.26547241
+Male,White,"Oak Creek, Wisconsin",Wisconsin,8/5/2012,2012,7,3,10,One semiautomatic handgun,No,42.885849,-87.86313629
+Male,White,"Aurora, Colorado",Colorado,7/20/2012,2012,12,58,70,"Two semiautomatic handguns, one rifle (assault), one shotgun",Yes,39.70928192,-104.8234863
+Male,White,"Seattle, Washington",Washington,5/20/2012,2012,6,1,7,Two semiautomatic handguns,No,47.60383224,-122.3300629
+Male,Asian,"Oakland, California",California,4/2/2012,2012,7,3,10,One semiautomatic handgun,No,37.80438232,-122.270813
+Male,Asian,"Norcross, Georgia",Georgia,2/22/2012,2012,5,0,5,One semiautomatic handgun,No,33.9412117,-84.21353149
+Male,White,"Seal Beach, California",California,10/14/2011,2011,8,1,9,"Two semiautomatic handguns, one revolver",No,33.74117661,-118.1046371
+Male,Latino,"Carson City, Nevada",Nevada,9/6/2011,2011,5,7,12,"Two rifles (both assault), one revolver",Yes,39.16379929,-119.7674026
+Male,White,"Tucson, Arizona",Arizona,1/8/2011,2011,6,13,19,One semiautomatic handgun,No,32.22174454,-110.9264755
+Male,Black,"Manchester, Connecticut",Connecticut,8/3/2010,2010,9,2,11,Two semiautomatic handguns,No,41.77593231,-72.52147675
+Male,Black,"Parkland, Washington",Washington,11/29/2009,2009,4,1,5,One semiautomatic handgun,No,47.15584564,-122.4370346
+Male,Other,"Fort Hood, Texas",Texas,11/5/2009,2009,13,30,43,One semiautomatic handgun,No,31.20112991,-97.7715683
+Male,Asian,"Binghamton, New York",New York,4/3/2009,2009,14,4,18,Two semiautomatic handguns,No,42.09868622,-75.91797638
+Male,White,"Carthage, North Carolina",North Carolina,3/29/2009,2009,8,3,11,"One revolver, one shotgun",No,35.34580231,-79.41705322
+Male,White,"Henderson, Kentucky",Kentucky,6/25/2008,2008,6,1,7,One semiautomatic handgun,No,37.7672081,-87.55737305
+Male,White,"DeKalb, Illinois",Illinois,2/14/2008,2008,6,21,27,"Three semiautomatic handguns, one shotgun",No,41.92947388,-88.75036621
+Male,Black,"Kirkwood, Missouri",Missouri,2/7/2008,2008,6,2,8,"One semiautomatic handgun, one revolver",No,38.58338547,-90.40678406
+Male,White,"Omaha, Nebraska",Nebraska,12/5/2007,2007,9,4,13,One rifle (assault),Yes,41.25873184,-95.93787384
+Male,White,"Crandon, Wisconsin",Wisconsin,10/7/2007,2007,6,1,7,One rifle (assault),Yes,45.57190704,-88.90289307
+Male,Asian,"Blacksburg, Virginia",Virginia,4/16/2007,2007,33,23,56,Two semiautomatic handguns,No,37.2295723,-80.41394043
+Male,White,"Salt Lake City, Utah",Utah,2/12/2007,2007,6,4,10,"One revolver, one shotgun",No,40.76064682,-111.8910904
+Male,White,"Lancaster County, Pennsylvania",Pennsylvania,10/2/2006,2006,6,5,11,"One semiautomatic handgun, one rifle, one shotgun",No,39.95890045,-76.08059692
+Male,White,"Seattle, Washington",Washington,3/25/2006,2006,7,2,9,"Two semiautomatic handguns, one rifle (assault), one shotgun",Yes,47.6228981,-122.3164978
+Female,White,"Goleta, California",California,1/30/2006,2006,8,0,8,One semiautomatic handgun,No,34.43628311,-119.8714371
+Male,Native American,"Red Lake, Minnesota",Minnesota,3/21/2005,2005,10,5,15,"Two semiautomatic handguns, one shotgun",No,47.87634659,-95.01693726
+Male,White,"Brookfield, Wisconsin",Wisconsin,3/12/2005,2005,7,4,11,One semiautomatic handgun,No,43.06056595,-88.10647583
+Male,White,"Columbus, Ohio",Ohio,12/8/2004,2004,5,7,12,One semiautomatic handgun,No,39.9622612,-83.00070953
+Male,White,"Meridian, Mississippi",Mississippi,7/8/2003,2003,7,8,15,"One semiautomatic handgun, two rifles, one derringer, one shotgun",No,32.37607956,-88.68978119
+Male,Black,"Melrose Park, Illinois",Illinois,2/5/2001,2001,5,4,9,"Two rifles, one revolver, one shotgun",No,41.90058517,-87.8567276
+Male,White,"Wakefield, Massachusetts",Massachusetts,12/26/2000,2000,7,0,7,"One semiautomatic handgun, one rifle (assault), one shotgun",Yes,42.50648499,-71.0728302
+Male,Latino,"Tampa, Florida",Florida,12/30/1999,1999,5,3,8,"One semiautomatic handgun, one revolver",No,27.94775963,-82.45844269
+Male,Asian,"Honolulu, Hawaii",Hawaii,11/2/1999,1999,7,0,7,One semiautomatic handgun,No,21.32551193,-157.8473053
+Male,White,"Fort Worth, Texas",Texas,9/15/1999,1999,8,7,15,Two semiautomatic handguns,No,32.69339752,-97.47067261
+Male,White,"Atlanta, Georgia",Georgia,7/29/1999,1999,9,13,22,"Three semiautomatic handguns, one revolver",No,33.74909973,-84.3901825
+Male,White,"Littleton, Colorado",Colorado,4/20/1999,1999,15,24,39,"One semiautomatic handgun (assault), one rifle (assault), two shotguns",Yes,39.602108,-104.9877243
+Male,White,"Springfield, Oregon",Oregon,5/21/1998,1998,4,25,29,"Two semiautomatic handguns, one rifle",No,44.04623795,-123.0220261
+Male,White,"Jonesboro, Arkansas",Arkansas,3/24/1998,1998,5,10,15,"Two semiautomatic handguns, two rifles, three revolvers, two derringers",No,35.8209877,-90.66825867
+Male,White,"Newington, Connecticut",Connecticut,3/6/1998,1998,5,1,6,One semiautomatic handgun,No,41.6856308,-72.72983551
+Male,Latino,"Orange, California",California,12/18/1997,1997,5,2,7,One rifle (assault),Yes,33.78779602,-117.8531113
+Male,Black,"Aiken, South Carolina",South Carolina,9/15/1997,1997,4,3,7,One semiautomatic handgun,No,33.55986023,-81.72195435
+Male,Black,"Fort Lauderdale, Florida",Florida,2/9/1996,1996,6,1,7,"One semiautomatic handgun, one revolver",No,26.12230873,-80.14337921
+Male,White,"Corpus Christi, Texas",Texas,4/3/1995,1995,6,0,6,"One semiautomatic handgun, one revolver",No,27.8237133,-97.41739655
+Male,White,"Fairchild Air Force Base, Washington",Washington,6/20/1994,1994,5,23,28,One rifle (assault),Yes,47.61864471,-117.6483612
+Male,Black,"Aurora, Colorado",Colorado,12/14/1993,1993,4,1,5,One semiautomatic handgun,No,39.75471115,-104.8358688
+Male,Black,"Garden City, New York",New York,12/7/1993,1993,6,19,25,One semiautomatic handgun,No,40.72676849,-73.6342926
+Male,White,"Fayetteville, North Carolina",North Carolina,8/6/1993,1993,4,8,12,"One rifle, two shotguns",No,35.05299377,-78.87870789
+Male,White,"San Francisco, California",California,7/1/1993,1993,9,6,15,Three semiautomatic handguns (two assault),Yes,37.77896118,-122.4191971
+Male,White,"Watkins Glen, New York",New York,10/15/1992,1992,5,0,5,One semiautomatic handgun,No,42.38105392,-76.87057495
+Male,White,"Olivehurst, California",California,5/1/1992,1992,4,10,14,"One rifle, one shotgun",No,39.07868576,-121.5475769
+Male,White,"Royal Oak, Michigan",Michigan,11/14/1991,1991,5,5,10,One rifle,No,42.48947906,-83.14464569
+Male,Asian,"Iowa City, Iowa",Iowa,11/1/1991,1991,6,1,7,One revolver,No,41.66069031,-91.53022003
+Male,White,"Killeen, Texas",Texas,10/16/1991,1991,24,20,44,Two semiautomatic handguns,No,31.11711884,-97.72779846
+Male,Black,"Jacksonville, Florida",Florida,6/18/1990,1990,10,4,14,"One rifle, one revolver",No,30.33218384,-81.65564728
+Male,White,"Louisville, Kentucky",Kentucky,9/14/1989,1989,9,12,21,"Three semiautomatic handguns (two assault), one rifle (assault), one revolver",Yes,38.25423813,-85.75940704
+Male,White,"Stockton, California",California,1/17/1989,1989,6,29,35,"One semiautomatic handgun, one rifle (assault)",Yes,37.95770264,-121.2907791
+Male,White,"Sunnyvale, California",California,2/16/1988,1988,7,4,11,"Two semiautomatic handguns, one rifle, two revolvers, two shotguns",No,37.36883163,-122.0363464
+Male,White,"Palm Bay, Florida",Florida,4/23/1987,1987,6,14,20,"One rifle, one revolver, one shotgun",No,28.03318787,-80.64296722
+Male,White,"Edmond, Oklahoma",Oklahoma,8/20/1986,1986,15,6,21,Three semiautomatic handguns,No,35.667202,-97.42936707
+Male,White,"San Ysidro, California",California,7/18/1984,1984,22,19,41,"One semiautomatic handgun, one rifle (assault), one shotgun",Yes,32.55200195,-117.0430832
+Male,White,"Dallas, Texas",Texas,6/29/1984,1984,6,1,7,One semiautomatic handgun,No,32.78010559,-96.80001068
+Male,White,"Miami, Florida",Florida,8/20/1982,1982,8,3,11,One shotgun,No,25.79649162,-80.22668457
