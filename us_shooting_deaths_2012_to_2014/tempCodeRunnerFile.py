@@ -1,1 +1,1 @@
-\n
+            if row.get('GENDER') == "Male":
