@@ -10,6 +10,7 @@ from collections import Counter
 state_list = []
 #creates list of  the number of shootings
 total_shootings_per_state_list = []
+a_list = []
 
 
 
@@ -18,26 +19,39 @@ shootings_by_race_list= []
 
 
 #functions/methods
-def func_name():
+def intro():
     """
     Presents intro to user.
     """
     # prints intro
     print("\nThis program prints stats on mass shootings in the US by state, sex and race from 2012 to 2014.", end='\n\n')
 
+def open_csv_file():
+        # opens file reader to read files
+    with open(r'D:\ccac\python_2\us_shooting_deaths_2012_to_2014\mass_shootings.csv', 'r') as csv_file:
+
+        # reads csv file and adds to reader
+        csv_reader = csv.DictReader(csv_file)
+
+        for x in csv_reader:
+            a_list.append(x)
+
+        return a_list
+        
 def open_csv():
 
         # opens file reader to read files
     with open(r'D:\ccac\python_2\us_shooting_deaths_2012_to_2014\mass_shootings.csv', 'r') as csv_file:
 
-    #     reads csv file and adds to reader
+        # reads csv file and adds to reader
         csv_reader = csv.DictReader(csv_file)
 
-    #creates count var and set to 0
+   
+    
+        #creates count var and set to 0
         male_count = 0
         female_count = 0
-
-        
+    
     #     loops through each row in file reader
         for row in csv_reader:
 
@@ -90,7 +104,8 @@ def open_csv():
 
 if __name__ == "__main__":
 
+    intro() 
+    # open_csv()
+    c =  open_csv_file()
     
-    open_csv()
-
-    
+    print(c)

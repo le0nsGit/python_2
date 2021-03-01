@@ -1,1 +1,2 @@
-            if row.get('GENDER') == "Male":
+male_count = 0
+        female_count = 0
