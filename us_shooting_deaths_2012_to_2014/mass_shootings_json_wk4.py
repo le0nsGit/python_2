@@ -1,4 +1,5 @@
 import csv
+import json
 from collections import Counter
 
 # attributes
@@ -99,6 +100,13 @@ def output_by_race(mass_shooting_dl):
         # prints results
         print(f'{race:<20}'f'{num:<20}')
 
+def send_to_json_file(mass_shootings_dl):
+
+    #opens json file or creates new if does not exist
+    with open('mass_shootings.json', 'w') as ms:
+     #sends mass shootings dict list to json file
+        json.dump(mass_shootings_dl, ms)
+        
 
 if __name__ == "__main__":
     intro()
@@ -108,3 +116,5 @@ if __name__ == "__main__":
     output_by_state(ms_dl)
 
     output_by_race(ms_dl)
+
+    send_to_json_file(ms_dl)
