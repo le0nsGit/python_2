@@ -104,8 +104,8 @@ def open_csv():
 
 if __name__ == "__main__":
 
-    intro() 
-    # open_csv()
-    c =  open_csv_file()
-    
-    print(c)
+        intro() 
+        # open_csv()
+        c =  open_csv_file()
+
+        print(c)

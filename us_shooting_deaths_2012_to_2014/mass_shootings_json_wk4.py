@@ -102,15 +102,17 @@ def output_by_race(mass_shooting_dl):
 
 def send_to_json_file(mass_shootings_dl):
 
+   # print(json.dumps(mass_shootings_dl))
     #opens json file or creates new if does not exist
     with open('mass_shootings.json', 'w') as ms:
+        
      #sends mass shootings dict list to json file
         json.dump(mass_shootings_dl, ms)
         
 
 if __name__ == "__main__":
+    
     intro()
-
     ms_dl = open_csv_file()
 
     output_by_state(ms_dl)
