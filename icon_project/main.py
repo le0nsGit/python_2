@@ -41,7 +41,7 @@ def user_input():
 
             finally:
                 # #runs if the digit length is greater than 2.
-                if len(ui) >= 2:
+                if len(ui) >= 10:
                     # reduces ui to 1 digit only.
                     ui = ui[0]
 
