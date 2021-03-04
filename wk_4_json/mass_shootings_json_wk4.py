@@ -29,7 +29,7 @@ def intro():
 
 def open_csv_file():
     # opens file reader to read files
-    with open(r'D:\ccac\python_2\us_shooting_deaths_2012_to_2014\mass_shootings.csv', 'r') as csv_file:
+    with open(r'mass_shootings.csv', 'r') as csv_file:
         # reads csv file and adds to reader
         csv_reader = csv.DictReader(csv_file)
 
