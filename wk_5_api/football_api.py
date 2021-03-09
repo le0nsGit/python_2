@@ -37,7 +37,7 @@ def connect_to_api():
 
         #prints title
         print("\n\n""2020 - 2021 Premeire League Matches and Dates")
-        print("-"*70)
+        print("-"*82)
 
         #loops through fixtures list and prints matches teams and date of match.
         for matches in fixtures:
