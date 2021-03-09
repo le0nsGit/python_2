@@ -11,15 +11,13 @@ import json
 # found on the server. 503: The server is not ready to handle the request.
 
 def connect_to_api():
+
     # makes a request to api for competition response data
     base_url = 'https://raw.githubusercontent.com'
     endpoint_url = '/openfootball/football.json/master/2020-21/en.1.json'
 
     # gets requested data from api
     response = requests.get(base_url + endpoint_url)
-
-    # converts json data to python dictionary data and stores in var
-    # premiere_league = response.json()
 
     # store http return code
     http_code = response.status_code
@@ -29,7 +27,21 @@ def connect_to_api():
         # prints response data
         # print(premiere_league)
         # or
-        print(response.text)
+        # print(response.text)
+
+        # loads json data in list
+        season_2020 = json.loads(response.text)
+
+        #loads inner list into fixtures list
+        fixtures = season_2020['matches']
+
+        #prints title
+        print("\n\n""2020 - 2021 Premeire League Matches and Dates")
+        print("-"*70)
+
+        #loops through fixtures list and prints matches teams and date of match.
+        for matches in fixtures:
+            print(f'{matches["team1"]:<30} {"vs":<10} {matches["team2"]:<30} {matches["date"]}\n')
 
     elif http_code == 400:
         # prints message user provided bad data
