@@ -1,18 +1,18 @@
 #*Football 2020-21 API*
 _______________________
 
-##About:
+## About:
 The Football 2020-21 api will provide current teams and match dates data in a table format.
 Data is received via json format from the 
 [openfootball](https://github.com/openfootball/football.json/blob/master/2020-21/en.1.json) api at
 https://github.com/openfootball/football.json/blob/master/2020-21/en.1.json. This is a free public api that requires
 no authentication keys.
 
-##Functions:
+## Functions:
 The api only consists of one function connect_to_api().
 There is no need for the user to enter any data as the table will be run at start. 
 
-###Function Code:
+### Function Code:
 
 def connect_to_api():
 
@@ -69,13 +69,13 @@ if __name__ == "__main__":
 
 
 
-##Results:
+## Results:
 Table results will be reflect to your monitor the same as the follwing example and will include
 all teams.
 
 ![Football 2020-21 Table Results!](images/results.jpg)
 
-##HTTP Codes:
+## HTTP Codes:
 The Football 202-21 api will provide the following codes when thying to connect or if and issue cocurs while tyring t0
 connect:
 
@@ -94,11 +94,11 @@ found on the server. 503: The server is not ready to handle the request.
 
 
 
-#####Week
+##### Week
 5 Python 2 api's
 
-####Creator:
+#### Creator:
 Leon Boczkowski
 
-####Contact:
+#### Contact:
 lbocz@acd.ccac.edu
