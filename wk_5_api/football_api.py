@@ -2,16 +2,20 @@ import requests
 import json
 
 
-# # api response codes: 200: Everything went okay, and the result has been returned (if any). 301: The server is
-# redirecting you to a different endpoint. This can happen when a company switches domain names, or an endpoint name
-# is changed. 400: The server thinks you made a bad request. This can happen when you don’t send along the right
-# data, among other things. 401: The server thinks you’re not authenticated. Many APIs require login credentials,
-# so this happens when you don’t send the right credentials to access an API. 403: The resource you’re trying to
-# access is forbidden: you don’t have the right permissions to see it. 404: The resource you tried to access wasn't’t
-# found on the server. 503: The server is not ready to handle the request.
-
 def connect_to_api():
-
+    """
+    connect_to_api function establishes connection with the openfootball api at Git.
+    The function will provide an http code for the connection status.
+    # # api response codes: 200: Everything went okay, and the result has been returned (if any). 301: The server is
+    # redirecting you to a different endpoint. This can happen when a company switches domain names, or an endpoint name
+    # is changed. 400: The server thinks you made a bad request. This can happen when you don’t send along the right
+    # data, among other things. 401: The server thinks you’re not authenticated. Many APIs require login credentials,
+    # so this happens when you don’t send the right credentials to access an API. 403: The resource you’re trying to
+    # access is forbidden: you don’t have the right permissions to see it. 404: The resource you tried to access wasn't’t
+    # found on the server. 503: The server is not ready to handle the request.
+    Once a connection is made the function will pull table and match date data from the api and output it in a tabular
+    format for easy reading.
+    """
     # makes a request to api for competition response data
     base_url = 'https://raw.githubusercontent.com'
     endpoint_url = '/openfootball/football.json/master/2020-21/en.1.json'
@@ -25,7 +29,7 @@ def connect_to_api():
     # runs depending on returned http response code
     if http_code == 200:
         # prints response data
-        # print(premiere_league)
+        print("\n\nYou have connect to the openfootball api....Enjoy\n\n")
         # or
         # print(response.text)
 
