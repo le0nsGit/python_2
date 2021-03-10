@@ -73,7 +73,7 @@ if __name__ == "__main__":
 Table results will be reflect to your monitor the same as the follwing example and will include
 all teams.
 
-![Football 2020-21 Table Results!](wk_5_api/images/results.jpg)
+![Football 2020-21 Table Results!](images/results.jpg)
 
 ##HTTP Codes:
 The Football 202-21 api will provide the following codes when thying to connect or if and issue cocurs while tyring t0
