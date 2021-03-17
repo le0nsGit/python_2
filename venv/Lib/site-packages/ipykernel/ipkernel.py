@@ -19,6 +19,8 @@ from .kernelbase import Kernel as KernelBase
 from .zmqshell import ZMQInteractiveShell
 from .eventloops import _use_appnope
 
+from .compiler import XCachingCompiler
+
 try:
     from IPython.core.interactiveshell import _asyncio_runner
 except ImportError:
@@ -71,6 +73,7 @@ class IPythonKernel(KernelBase):
             user_module = self.user_module,
             user_ns     = self.user_ns,
             kernel      = self,
+            compiler_class = XCachingCompiler,
         )
         self.shell.displayhook.session = self.session
         self.shell.displayhook.pub_socket = self.iopub_socket
@@ -145,12 +148,13 @@ class IPythonKernel(KernelBase):
         self.shell.exit_now = False
         super(IPythonKernel, self).start()
 
-    def set_parent(self, ident, parent):
+    def set_parent(self, ident, parent, channel='shell'):
         """Overridden from parent to tell the display hook and output streams
         about the parent message.
         """
-        super(IPythonKernel, self).set_parent(ident, parent)
-        self.shell.set_parent(parent)
+        super(IPythonKernel, self).set_parent(ident, parent, channel)
+        if channel == 'shell':
+            self.shell.set_parent(parent)
 
     def init_metadata(self, parent):
         """Initialize metadata.
@@ -509,7 +513,7 @@ class IPythonKernel(KernelBase):
             reply_content['engine_info'] = e_info
 
             self.send_response(self.iopub_socket, 'error', reply_content,
-                               ident=self._topic('error'))
+                               ident=self._topic('error'), channel='shell')
             self.log.info("Exception in apply request:\n%s", '\n'.join(reply_content['traceback']))
             result_buf = []
             reply_content['status'] = 'error'

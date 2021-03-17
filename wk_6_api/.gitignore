@@ -1,0 +1,20 @@
+# Created by .ignore support plugin (hsz.mobi)
+Ways to have gitignore not included parts within a file.
+
+ex1.
+Using json
+{
+"API_KEY": "12345678799asc234"
+}
+
+#To get git igonore to ignore directories add the directory name to gitignore:
+#ex2
+
+#directory name/folder
+ignoreThisFolder/
+# or the name of the file to add to gitignore
+api_key.json
+#
+#This file should be ignored during upload to git as it has been placed in a directory that is on
+the gitignore file.
+ # write code snippet that loads the file and reads the json from the file to program.
