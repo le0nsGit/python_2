@@ -1,17 +1,24 @@
-
-
 import requests
 import json
-import  pandas as pd
+import pandas as pd
 
 base_url = "https://api-football-v1.p.rapidapi.com/v2"
 
 querystring = {"timezone": "Europe/London"}
 
+key = ''
+
+#gets api key from json file
+with open('dont_push/key.json','r') as api_key:
+
+     key = json.load(api_key)
+     print(key)
+
 headers = {
-    'x-rapidapi-key': "c3ee79baadmsh80c1e8b139e21b8p1dc912jsn59a2d6a374ff",
+    'x-rapidapi-key': key['api_key'],
     'x-rapidapi-host': "api-football-v1.p.rapidapi.com"
 }
+
 def status(http_code):
     """
     will output message and code upon if status being met
@@ -75,35 +82,49 @@ def teams(base_url, endpoint="/teams/league/2790"):
         response = requests.get(url, headers=headers, params=querystring)
 
         # store http return code status
-        response.status_code
+        # response.status_code
 
-        #runs status code function
+        # runs status code function
         status(response.status_code)
 
-        #appends data from api to football teams dictionary
+        # appends data from api to football teams dictionary
         football_teams_d = json.loads(response.text)
 
         # print(type(football_teams_d))
         prem_team_l = []
-        #loops through football_teams_d
+        # loops through football_teams_d
         for t in football_teams_d['api']['teams']:
-
-            #appends team data tp prem_teams list
+            # appends team data tp prem_teams list
             prem_team_l.append(t)
 
         # for x in prem_team_l:
         #     print(json.dumps(x,indent=1))
 
-        #sets up
-        df = pd.DataFrame(data=prem_team_l, columns=['team_id','name', 'founded', 'venue_name', 'venue_city', 'venue_capacity'])
-
-        #prints team information as pandas tables
-        print(df.head(20))
+        run_as_dataframe(prem_team_l=prem_team_l)
 
     except Exception as e:
         print(f'You have the following errors in code: {e}')
-def main():
 
+
+def run_as_dataframe(prem_team_l):
+    """
+    Accepts premeire league table data and outputs as a Pandas table using its dataframe functions.
+
+    Args:
+        prem_team_l:
+
+    Returns:
+
+    """
+    # sets up
+    df = pd.DataFrame(data=prem_team_l,
+                      columns=['team_id', 'name', 'founded', 'venue_name', 'venue_city', 'venue_capacity'])
+
+    # prints team information as pandas tables
+    print(df.head(20))
+
+
+def main():
     print("\n\nWelcome to the Premiere League API!\nHere we will provide you with current football teams"
           "data happening in the league, including current match data and scores!\n\n")
 
@@ -111,10 +132,9 @@ def main():
     # #
     # # endpoints_d.get('teams')()
 
-    #runs team function
+    # runs team function
     teams(base_url)
 
 
 if __name__ == '__main__':
-
     main()
