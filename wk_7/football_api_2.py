@@ -8,16 +8,16 @@ querystring = {"timezone": "Europe/London"}
 
 key = ''
 
-#gets api key from json file
-with open('dont_push/key.json','r') as api_key:
-
-     key = json.load(api_key)
-     print(key)
+# gets api key from json file
+with open('dont_push/key.json', 'r') as api_key:
+    key = json.load(api_key)
+    print(key)
 
 headers = {
     'x-rapidapi-key': key['api_key'],
     'x-rapidapi-host': "api-football-v1.p.rapidapi.com"
 }
+
 
 def status(http_code):
     """
@@ -92,10 +92,9 @@ def teams(base_url, endpoint="/teams/league/2790"):
 
         # print(type(football_teams_d))
         prem_team_l = []
-        # loops through football_teams_d
-        for t in football_teams_d['api']['teams']:
-            # appends team data tp prem_teams list
-            prem_team_l.append(t)
+
+        # # loops through football_teams_d and appends team data to prem_team_l using list comprehesion
+        prem_team_l = [t for t in football_teams_d['api']['teams']]
 
         # for x in prem_team_l:
         #     print(json.dumps(x,indent=1))
