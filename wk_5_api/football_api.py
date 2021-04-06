@@ -31,38 +31,38 @@ def connect_to_api():
         # prints response data
         print("\n\nYou have connect to the openfootball api....Enjoy\n\n")
         # or
-        # print(response.text)
+        print(response.text)
 
-        # loads json data in list
-        season_2020 = json.loads(response.text)
-
-        #loads inner list into fixtures list
-        fixtures = season_2020['matches']
-
-        #prints title
-        print("\n\n""2020 - 2021 Premeire League Matches and Dates")
-        print("-"*82)
-
-        #loops through fixtures list and prints matches teams and date of match.
-        for matches in fixtures:
-            print(f'{matches["team1"]:<30} {"vs":<10} {matches["team2"]:<30} {matches["date"]}\n')
-
-    elif http_code == 400:
-        # prints message user provided bad data
-        print("You have provided bad data. Cannot connect to api")
-
-    elif http_code == 401:
-        # prints message user provided user not authenticated
-        print("You have not authenticated. Cannot connect to api")
-
-    elif http_code == 404:
-        # prints message user cannot find reference
-        print("Cannot find reference. Cannot connect to api")
-
-    elif http_code == 500:
-        # prints message user cannot find reference
-        print("Server not ready. Cannot connect to api")
-
+    #     # loads json data in list
+    #     season_2020 = json.loads(response.text)
+    #
+    #     #loads inner list into fixtures list
+    #     fixtures = season_2020['matches']
+    #
+    #     #prints title
+    #     print("\n\n""2020 - 2021 Premeire League Matches and Dates")
+    #     print("-"*82)
+    #
+    #     #loops through fixtures list and prints matches teams and date of match.
+    #     for matches in fixtures:
+    #         print(f'{matches["team1"]:<30} {"vs":<10} {matches["team2"]:<30} {matches["date"]}\n')
+    #
+    # elif http_code == 400:
+    #     # prints message user provided bad data
+    #     print("You have provided bad data. Cannot connect to api")
+    #
+    # elif http_code == 401:
+    #     # prints message user provided user not authenticated
+    #     print("You have not authenticated. Cannot connect to api")
+    #
+    # elif http_code == 404:
+    #     # prints message user cannot find reference
+    #     print("Cannot find reference. Cannot connect to api")
+    #
+    # elif http_code == 500:
+    #     # prints message user cannot find reference
+    #     print("Server not ready. Cannot connect to api")
+    #
 
 # start of main program
 if __name__ == "__main__":
