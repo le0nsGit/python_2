@@ -1,7 +1,6 @@
 
 # import bs4
 from bs4 import BeautifulSoup
-
 with open('webscrape.html', mode='r') as wf:
     #extract contents
     html = wf.read()
